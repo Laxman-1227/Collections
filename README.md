@@ -57,6 +57,4 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/Laxman-1227/Collections.git
    6a7d8fd..576ee31  feature/Laxman -> feature/Laxman
 
-ADMIN@DESKTOP-GJQI48R MINGW64 ~/Documents/New folder-collection/Collections (feature/Laxman)
-$
 

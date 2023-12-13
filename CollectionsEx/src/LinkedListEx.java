@@ -3,115 +3,136 @@ import java.util.LinkedList;
 public class LinkedListEx {
 
 	public static void main(String[] args) {
-		
-		//add(E element):
 
-			
-			LinkedList<String> linkedList = new LinkedList<>();
-			linkedList.add("Java");
-			linkedList.add("Python");
-			linkedList.add("C++");
-			System.out.println("LinkedList after adding elements: " + linkedList);
-			
-			//addAll(Collection<? extends E> c):
+		add();
+		addAll();
+		get();
+		remove();
+		size();
+		clear();
+		addFirst();
+		addLast();
+		removeFirst();
+		removeLast();
+	}
 
+	private static void removeLast() {
+		// removeLast():
 
-			LinkedList<String> list1 = new LinkedList<>();
-			list1.add("Apple");
-			list1.add("Banana");
+		LinkedList<String> animals = new LinkedList<>();
+		animals.add("Lion");
+		animals.add("Tiger");
+		animals.add("Bear");
 
-			LinkedList<String> list2 = new LinkedList<>();
-			list2.add("Orange");
-			list2.add("Grapes");
+		animals.removeLast();
+		System.out.println("LinkedList after removing the last element: " + animals);
+	}
 
-			list1.addAll(list2);
-			System.out.println("LinkedList after adding all elements from another collection: " + list1);
-			
-			//get(int index):
+	private static void removeFirst() {
+		// removeFirst():
 
-			LinkedList<Integer> numbers = new LinkedList<>();
-			numbers.add(10);
-			numbers.add(20);
-			numbers.add(30);
+		LinkedList<Integer> integers = new LinkedList<>();
+		integers.add(1);
+		integers.add(2);
+		integers.add(3);
 
-			int elementAtIndex1 = numbers.get(1);
-			System.out.println("Element at index 1: " + elementAtIndex1);
-			
-			//remove(Object o):
+		integers.removeFirst();
+		System.out.println("LinkedList after removing the first element: " + integers);
+	}
 
-			LinkedList<String> fruits = new LinkedList<>();
-			fruits.add("Apple");
-			fruits.add("Banana");
-			fruits.add("Orange");
+	private static void addLast() {
+		// addLast(E element):
 
-			fruits.remove("Banana");
-			System.out.println("LinkedList after removing an element: " + fruits);
-			
-			//size():
+		LinkedList<String> colors = new LinkedList<>();
+		colors.add("Red");
+		colors.add("Green");
 
-			LinkedList<Double> prices = new LinkedList<>();
-			prices.add(19.99);
-			prices.add(29.99);
-			prices.add(39.99);
+		colors.addLast("Blue");
+		System.out.println("LinkedList after adding element at the end: " + colors);
+	}
 
-			int size = prices.size();
-			System.out.println("Size of the LinkedList: " + size);
-			
-			//clear():
+	private static void addFirst() {
+		// addFirst(E element):
 
-			LinkedList<Character> characters = new LinkedList<>();
-			characters.add('A');
-			characters.add('B');
-			characters.add('C');
+		LinkedList<String> names = new LinkedList<>();
+		names.add("John");
+		names.add("Alice");
 
-			characters.clear();
-			System.out.println("LinkedList after clearing all elements: " + characters);
-			
-			//addFirst(E element):
+		names.addFirst("Bob");
+		System.out.println("LinkedList after adding element at the beginning: " + names);
+	}
 
-			
-			
-			LinkedList<String> names = new LinkedList<>();
-			names.add("John");
-			names.add("Alice");
+	private static void clear() {
+		// clear():
 
-			names.addFirst("Bob");
-			System.out.println("LinkedList after adding element at the beginning: " + names);
-			
-			//addLast(E element):
+		LinkedList<Character> characters = new LinkedList<>();
+		characters.add('A');
+		characters.add('B');
+		characters.add('C');
 
-			
-			
-			LinkedList<String> colors = new LinkedList<>();
-			colors.add("Red");
-			colors.add("Green");
+		characters.clear();
+		System.out.println("LinkedList after clearing all elements: " + characters);
+	}
 
-			colors.addLast("Blue");
-			System.out.println("LinkedList after adding element at the end: " + colors);
-			
-			//removeFirst():
+	private static void size() {
+		// size():
 
-			
-			
-			LinkedList<Integer> integers = new LinkedList<>();
-			integers.add(1);
-			integers.add(2);
-			integers.add(3);
+		LinkedList<Double> prices = new LinkedList<>();
+		prices.add(19.99);
+		prices.add(29.99);
+		prices.add(39.99);
 
-			integers.removeFirst();
-			System.out.println("LinkedList after removing the first element: " + integers);
-			
-			//removeLast():
+		int size = prices.size();
+		System.out.println("Size of the LinkedList: " + size);
+	}
 
-			
-			
-			LinkedList<String> animals = new LinkedList<>();
-			animals.add("Lion");
-			animals.add("Tiger");
-			animals.add("Bear");
+	private static void remove() {
+		// remove(Object o):
 
-			animals.removeLast();
-			System.out.println("LinkedList after removing the last element: " + animals);
+		LinkedList<String> fruits = new LinkedList<>();
+		fruits.add("Apple");
+		fruits.add("Banana");
+		fruits.add("Orange");
+
+		fruits.remove("Banana");
+		System.out.println("LinkedList after removing an element: " + fruits);
+	}
+
+	private static void get() {
+		// get(int index):
+
+		LinkedList<Integer> numbers = new LinkedList<>();
+		numbers.add(10);
+		numbers.add(20);
+		numbers.add(30);
+
+		int elementAtIndex1 = numbers.get(1);
+		System.out.println("Element at index 1: " + elementAtIndex1);
+	}
+
+	private static void addAll() {
+		// addAll(Collection<? extends E> c):
+
+		LinkedList<String> list1 = new LinkedList<>();
+		list1.add("Apple");
+		list1.add("Banana");
+
+		LinkedList<String> list2 = new LinkedList<>();
+		list2.add("Orange");
+		list2.add("Grapes");
+
+		list1.addAll(list2);
+		System.out.println("LinkedList after adding all elements from another collection: " + list1);
+	}
+
+	private static void add() {
+		// add(E element):
+
+		LinkedList<String> linkedList = new LinkedList<>();
+		linkedList.add("Java");
+		linkedList.add("Python");
+		linkedList.add("C++");
+		System.out.println("LinkedList after adding elements: " + linkedList);
 	}
 
 }

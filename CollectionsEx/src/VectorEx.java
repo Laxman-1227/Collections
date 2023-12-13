@@ -4,11 +4,11 @@ public class VectorEx {
 	public static void main(String[] args) {
 
 		add();
-		addAll();
-		get();
-		remove();
-		size();
-		clear();
+//		addAll();
+//		get();
+//		remove();
+//		size();
+//		clear();
 
 	}
 

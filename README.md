@@ -21,7 +21,7 @@ $ git commit -m "added file"
 ADMIN@DESKTOP-GJQI48R MINGW64 ~/Documents/New folder-collection/Collections (feature/Laxman)
 $ git push
    
-==========================================================Collections api=============================================================================================
+============================================Collections api=======================================
   							List									Set											Map
   Implemented classes: ArrayLiist, LinkedList,					HashSet, LinkedHashSet, TreeSet				HashMap, LinkedHashMap, TreeMap, HashTable
   						stack, vector
